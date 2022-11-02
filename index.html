@@ -1,0 +1,50 @@
+<!--
+    File: index.html
+    Github Username: Colah2122
+    Author: Chris Olah
+    Date: 11/1/2022
+    Contact Information: Christopher_Olah@student.uml.edu
+    Information: HTML structure file for interactive dynamic 
+        multiplication table. Create forms and tables and input 
+        locations for webpage. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Table</title>
+        <link rel="stylesheet" href="css/index.css">           <!-- Incorporating css file-->
+    </head>
+    <body>
+        <form class="inputs">                                  <!-- Creating form to get user input -->
+            <table id="userInput">
+                <tr>
+                    <td>Minimum Column Value:</td> 
+                    <td><input type="text" id="minCol"></td>   <!-- Displaying minimum column value -->
+                </tr>
+                <tr>
+                    <td>Maximum Column Value:</td>
+                    <td><input type="text" id="maxCol"></td>   <!-- Displaying maximum column value -->
+                </tr>
+                <tr>
+                    <td>Minimum Row Value:</td>
+                    <td><input type="text" id="minRow"></td>   <!-- Displaying minimum row value -->
+                </tr>
+                <tr>
+                    <td>Maximum Row Value:</td>
+                    <td><input type="text" id="maxRow"></td>   <!-- Displaying maximum row value -->
+                </tr>
+                <tr>
+                    <td id="makeTable" colspan="2">
+                        <button class="submit" type="submit">"Make Table"</button>  <!-- Displaying submit button -->
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id="infotext">
+        </div>
+         <div id="table">
+         </div>
+        <script src="js/index.js"></script>                    <!-- Incorporating javascript file-->
+    </body>
+</html>
