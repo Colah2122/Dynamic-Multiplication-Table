@@ -1,0 +1,86 @@
+/**********************************
+    File: index.css
+    Github Username: Colah2122
+    Author: Chris Olah
+    Date: 11/1/2022
+    Contact Information: Christopher_Olah@student.uml.edu
+    Information: CSS styling for index.html file. Makes 
+        dynamic multiplcation table look nice with specific 
+        syles and colors. 
+**********************************/
+
+/* Set styles for body */
+body {
+    width: 75%;
+    padding-bottom: 30em;
+    margin: auto;
+    margin-top: 3%;text-align: center;
+    background-color:rgb(212, 231, 255);
+}
+
+/* Set styles for table with border and position */
+table {
+    table-layout: fixed;
+    position: relative;
+    margin: auto;
+    border: solid;
+    border-collapse: collapse;
+    
+}
+
+/* Set styles for button with font and color and size */
+button {
+    width: 75%;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: rgb(121, 114, 255);
+}
+
+/* Set with for inpupt text */
+input[type=text] {
+    width: 4em;
+}
+
+
+/* Set styles for table id's and table header */
+#table td, #table th {
+    min-width: 50px;
+}
+
+/* Set styles for text information that alerts errors */
+#infotext {
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+}
+
+/* Set alternating colors for table for readability */
+#table tr:nth-child(odd) td:nth-child(even) {
+    background-color: rgb(101, 101, 255);
+}
+
+#table tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(168, 168, 255);
+}
+
+/* Set table position */
+#table {
+    font-weight: bold;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+/* Set colors for rows */
+#row {
+    color: white;
+    background-color: blue;
+}
+
+/* Set position for table headers */
+th {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
